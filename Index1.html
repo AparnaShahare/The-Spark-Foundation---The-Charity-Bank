@@ -1,0 +1,94 @@
+<!DOCtype html>
+<html>
+<head>
+    <title> The Charity Bank </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="background">
+    <nav class="navbar">
+        <h1 class="logo">The Charity Bank </h1>
+        <ul>
+            <li><a href="#Home" claas="active"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="#About"><i class="fa fa-fw fa-user"></i>About</a></li>
+            <li><a href="#Contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+  
+        <div class = "header">
+      <section id ="Home">
+        <div>
+            <h1 class="head-text1">We look Forword <br> to your help</h1>
+            <p class="p-text1"><b>
+              We helping the very poor and needy through<br>this organization......You can join us,you can help people<br> 
+              in need through Our Charity . </b></p>
+             <form ><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HjPOE7otzFWwRL" async> 
+            </script> </form>
+
+        </div>
+      </section>
+      </div>
+     
+      <section id="About">
+        <div class="About"> 
+          <h1 class="About-h1"> A bit about us</h1>
+                <p class="About-p">Charity Bank is a savings and loans bank with a mission</br> to use money for good. We use the money our savers</br> entrust to us to make loans to charities, social enterprises</br> and organisations with charitable purposes.<br>
+                Our community of borrowers, savers, shareholders and</br> staff are all working towards one goal – helping to create</br> lasting social change in our communities. </p>
+                    <button class="About-btn" onclick="window.location.href = 'https://www.charitybank.org/';">Read More About-Us</button>
+
+        </div>
+      </section>
+      <section id="Contact">
+      <form class="form1">
+        <script>
+            function validation()
+            {
+             var name=document.getElementById("name").value;
+             var email=document.getElementById("email").value;
+             var subject=document.getElementById("subject").value;
+             var message=document.getElementById("message").value;
+             if(name=="")
+             {
+               alert("Please Enter Name");
+             }
+             else if(email=="")
+             {
+               alert("Please Enter Email Id");
+             }
+             else if(subject=="")
+             {
+               alert("Please Enter subject");
+             }
+             else if(message=="")
+             {
+               alert("Please Write Message");
+             }
+             else 
+             {
+               alert("Message Send Successfully");
+             }
+            }
+          </script>
+        <p>
+        <div class="form_details ">
+          <br><b>
+        <label for="name"><p>NAME</p></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <br>
+        <label for="name">EMAIL</label>
+        <input type="text" id="email" name="email" placeholder="Enter email address">
+          <br>
+        <label for="name">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject">
+          <br>
+        <label for="name">MESSAGE</label>
+        <textarea name="text" id="message" rows="2" placeholder="Enter Message"></textarea>
+        </b>
+          <br>
+        <button type="submit" value="submit" class="btn" onclick="validation()" >Send Message</button>
+        </div>
+        </p>
+      </form> 
+    </section>
+</body>
+</html>
